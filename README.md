@@ -76,8 +76,9 @@ $ terraform apply --auto-approve
 $ terraform destroy --auto-approve
 
 ## create the kubeconfig file  
-$ mkdir .kube/ 
-$ vi .kube/config
+$ mkdir ~/.kube/ 
+$ vi ~/.kube/config
+$sudo aws eks update-kubeconfig --name terraform-eks-demo --region us-east-1
 $ kubectl get pod
 $ #!/bin/bash 
 $ sh iam-authenticator.sh 
